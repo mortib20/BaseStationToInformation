@@ -58,7 +58,19 @@ internal abstract class Program
             MessageGenerateDate = strings[6],
             MessageGenerateTime = strings[7],
             MessageLoggedDate = strings[8],
-            MessageLoggedTime = strings[9]
+            MessageLoggedTime = strings[9],
+            Callsign = strings[10],
+            Altitude = strings[11],
+            GroundSpeed = strings[12],
+            Track = strings[13],
+            Latitude = strings[14],
+            Longitude = strings[15],
+            VerticalRate = strings[16],
+            Squawk = strings[17],
+            Alert = strings[18],
+            Emergency = strings[19],
+            Spi = strings[20],
+            IsOnGround = strings[21]
         };
 
         await Task.Delay(1000);
@@ -91,6 +103,19 @@ internal class BaseStationMessage
     public string? MessageGenerateTime { get; set; }
     public string? MessageLoggedDate { get; set; }
     public string? MessageLoggedTime { get; set; }
+    
+    public string? Callsign { get; set; }
+    public string? Altitude { get; set; }
+    public string? GroundSpeed { get; set; }
+    public string? Track { get; set; }
+    public string? Latitude { get; set; }
+    public string? Longitude { get; set; }
+    public string? VerticalRate { get; set; }
+    public string? Squawk { get; set; }
+    public string? Alert { get; set; }
+    public string? Emergency { get; set; }
+    public string? Spi { get; set; }
+    public string? IsOnGround { get; set; }
 
     public DateTime GenerateDate()
     {
@@ -107,6 +132,6 @@ internal class BaseStationMessage
     public override string ToString()
     {
         return
-            $"{nameof(MessageType)}: {MessageType}, {nameof(TransmissionType)}: {TransmissionType}, {nameof(SessionId)}: {SessionId}, {nameof(AircraftId)}: {AircraftId}, {nameof(HexIdent)}: {HexIdent}, {nameof(FlightId)}: {FlightId}, {nameof(MessageGenerateDate)}: {MessageGenerateDate}, {nameof(MessageGenerateTime)}: {MessageGenerateTime}, {nameof(MessageLoggedDate)}: {MessageLoggedDate}, {nameof(MessageLoggedTime)}: {MessageLoggedTime}";
+            $"{nameof(MessageType)}: {MessageType}, {nameof(TransmissionType)}: {TransmissionType}, {nameof(SessionId)}: {SessionId}, {nameof(AircraftId)}: {AircraftId}, {nameof(HexIdent)}: {HexIdent}, {nameof(FlightId)}: {FlightId}, {nameof(MessageGenerateDate)}: {MessageGenerateDate}, {nameof(MessageGenerateTime)}: {MessageGenerateTime}, {nameof(MessageLoggedDate)}: {MessageLoggedDate}, {nameof(MessageLoggedTime)}: {MessageLoggedTime}, {nameof(Callsign)}: {Callsign}, {nameof(Altitude)}: {Altitude}, {nameof(GroundSpeed)}: {GroundSpeed}, {nameof(Track)}: {Track}, {nameof(Latitude)}: {Latitude}, {nameof(Longitude)}: {Longitude}, {nameof(VerticalRate)}: {VerticalRate}, {nameof(Squawk)}: {Squawk}, {nameof(Alert)}: {Alert}, {nameof(Emergency)}: {Emergency}, {nameof(Spi)}: {Spi}, {nameof(IsOnGround)}: {IsOnGround}";
     }
 }
