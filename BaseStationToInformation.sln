@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseStationToInformation", "BaseStationToInformation\BaseStationToInformation.csproj", "{F21FC6DA-CDE9-4C7A-AE59-04A766711EFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F21FC6DA-CDE9-4C7A-AE59-04A766711EFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F21FC6DA-CDE9-4C7A-AE59-04A766711EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F21FC6DA-CDE9-4C7A-AE59-04A766711EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F21FC6DA-CDE9-4C7A-AE59-04A766711EFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
